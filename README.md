@@ -4,7 +4,7 @@ Learning materials and practice projects.
 
 ## JavaScript
 - `mini-projects/calculator` — simple calculator.
-- `mini-projects/cookie-monster` — cookie clicker game.
+- `mini-projects/cookie-monster` — cookie-monster website.
 
 ## React
 - `courses/react-19-tutorial-2025` — React 19 tutorial exercises.
