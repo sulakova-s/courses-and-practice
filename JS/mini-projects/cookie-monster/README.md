@@ -2,6 +2,10 @@
 
 A web implementation featuring eye-tracking mechanics with cross-eye effect.
 
+## 🚀 Live Demo
+
+👉 [https://courses-and-practice.vercel.app/](https://courses-and-practice.vercel.app/)
+
 ## Key Features
 - Eye tracking - Pupils follow cursor movement
 - Cross-eye effect - Eyes converge when cursor is close to face
