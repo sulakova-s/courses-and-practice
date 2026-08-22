@@ -1464,3 +1464,254 @@ body.disco-mode video {
 footer {
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+  #i-know-you-said-no-big-deal {
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  #oh-boy-here-we-go {
+    gap: 2rem;
+    padding: 0 20px;
+  }
+
+  #take-the-compliments {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  #take-the-compliments ul {
+    padding-top: 0;
+  }
+
+  .wishes-grid {
+    gap: 2rem;
+  }
+}
+
+/* Телефоны */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 1.1rem !important;
+  }
+
+  /* Шапка */
+  #i-know-you-said-no-big-deal {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 15px;
+  }
+
+  #heeey img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #but-i-did-it-anyway video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Кнопки */
+  #you-didnt-press-no-do-you {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  /* Секция с комплиментами */
+  #oh-boy-here-we-go {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 15px;
+  }
+
+  #oh-boy-here-we-go > div {
+    width: 100%;
+  }
+
+  #oh-boy-here-we-go > div img,
+  #oh-boy-here-we-go > div video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Список комплиментов */
+  #take-the-compliments {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  #take-the-compliments img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #take-the-compliments ul {
+    padding-top: 0;
+    max-width: 100%;
+  }
+
+  #take-the-compliments li {
+    font-size: 1rem !important;
+    padding: 6px 0 6px 28px;
+  }
+
+  /* Чеклист */
+  .wishes-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 15px;
+  }
+
+  #humble-list {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  #humble-list p {
+    font-size: 1rem !important;
+  }
+
+  #humble-list label {
+    font-size: 1rem !important;
+  }
+
+  .right-side img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Письмо */
+  #santas-sob-story {
+    padding: 0 15px;
+  }
+
+  #letter-gif {
+    width: 200px;
+    height: 200px;
+  }
+
+  #download-letter {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  /* Обратный отсчёт */
+  #countdown-section {
+    padding: 0 15px;
+  }
+
+  #countdown-gif,
+  #memory-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  #countdown-timer {
+    font-size: 2rem;
+  }
+
+  /* Пати секция */
+  #party-time {
+    padding: 20px 15px;
+  }
+
+  #party-gif {
+    width: 200px;
+    height: 200px;
+  }
+
+  #playlist-link {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Футер */
+  footer p {
+    font-size: 1rem !important;
+    padding: 10px;
+  }
+
+  /* Диско-кнопка */
+  #disco-toggle {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 480px) {
+  #queen-track {
+    gap: 1.5rem;
+    font-size: 12px;
+  }
+
+  #queen-alert {
+    padding: 10px 0;
+  }
+
+  #heeey img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #take-the-compliments img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #letter-gif {
+    width: 150px;
+    height: 150px;
+  }
+
+  #countdown-gif,
+  #memory-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  #party-gif {
+    width: 150px;
+    height: 150px;
+  }
+
+  #my-person {
+    font-size: 1.3rem !important;
+  }
+
+  .wishes-title {
+    font-size: 1.3rem !important;
+  }
+
+  #party-text {
+    font-size: 1.3rem !important;
+  }
+
+  #more-btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+}
