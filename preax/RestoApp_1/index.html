@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Resto App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#">
+          <img class="header__logo" src="./images/logo.svg" alt="restoApp" />
+        </a>
+
+        <nav>
+          <ul class="header__list">
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">События</a></li>
+            <li><a href="#">Зоны доставки</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__phone-block">
+          <a class="header__phone" href="tel:+01234567890"
+            >+0 (123) 456 78-90
+          </a>
+          <p class="header__phone-caption">Прием заказов с 10:00 до 22:40</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu">
+        <h1 class="menu__title">Меню</h1>
+        <ul class="menu__list">
+          <li>
+            <a class="menu__card menu__card--pizza" href="#">
+              <p class="menu__card-title">Пицца</p>
+            </a>
+          </li>
+          <li>
+            <a class="menu__card menu__card--soups" href="#">
+              <p class="menu__card-title">Супы</p>
+            </a>
+          </li>
+          <li>
+            <a class="menu__card menu__card--hot-dishes" href="#">
+              <p class="menu__card-title">Горячие блюда</p>
+            </a>
+          </li>
+          <li>
+            <a class="menu__card menu__card--salads" href="#">
+              <p class="menu__card-title">Салаты</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
