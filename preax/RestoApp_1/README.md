@@ -2,5 +2,3 @@
 
 Ник — sulakova_s
 Имя — Sentyabrina
-
-test

@@ -1,0 +1,16 @@
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 64px;
+}
+
+.section__title {
+  margin-bottom: 32px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.section__list {
+  display: flex;
+  gap: 32px;
+}

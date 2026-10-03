@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
@@ -14,34 +14,66 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <a href="#">
-          <img class="header__logo" src="./images/logo.svg" alt="restoApp" />
-        </a>
-
-        <nav>
-          <ul class="header__list">
-            <li><a href="#">Меню</a></li>
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">События</a></li>
-            <li><a href="#">Зоны доставки</a></li>
-          </ul>
-        </nav>
-
-        <div class="header__phone-block">
-          <a class="header__phone" href="tel:+01234567890"
-            >+0 (123) 456 78-90
+      <div class="header__promo">
+        <p class="header__promo-text">Бесплатная доставка от 1 000 ₽</p>
+        <button type="button" class="header__promo-close">
+          <img
+            class="header__promo-icon"
+            src="./images/icons/x-mark.svg"
+            alt="Закрыть промо-предложение"
+          />
+        </button>
+      </div>
+      <div class="header__main">
+        <div class="header__container">
+          <a href="#">
+            <img class="header__logo" src="./images/logo.svg" alt="restoApp" />
           </a>
-          <p class="header__phone-caption">Прием заказов с 10:00 до 22:40</p>
+
+          <nav>
+            <ul class="header__list">
+              <li><a href="#">Меню</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">События</a></li>
+              <li><a href="#">Зоны доставки</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <div class="header__phone-block">
+              <a class="header__phone" href="tel:+01234567890"
+                >+0 (123) 456 78-90
+              </a>
+              <p class="header__phone-caption">
+                Прием заказов с 10:00 до 22:40
+              </p>
+            </div>
+            <div class="header__buttons">
+              <button type="button" class="header__btn">
+                <img
+                  class="header__btn-icon"
+                  src="./images/icons/profile.svg"
+                  alt="Личный кабинет"
+                />
+              </button>
+              <button type="button" class="header__btn">
+                <img
+                  class="header__btn-icon"
+                  src="./images/icons/basket.svg"
+                  alt="Корзина"
+                />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="menu">
-        <h1 class="menu__title">Меню</h1>
-        <ul class="menu__list">
+      <section class="section menu">
+        <h1 class="section__title">Меню</h1>
+        <ul class="section__list">
           <li>
             <a class="menu__card menu__card--pizza" href="#">
               <p class="menu__card-title">Пицца</p>
@@ -61,6 +93,197 @@
             <a class="menu__card menu__card--salads" href="#">
               <p class="menu__card-title">Салаты</p>
             </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section new-dishes">
+        <h2 class="section__title">Новинки</h2>
+        <ul class="section__list">
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/new-dishes/chinese-egg-soup.png"
+                alt=""
+              />
+              <div class="product-card__badges">
+                <img
+                  class="product-card__badge"
+                  src="./images/badges/vegetarian.svg"
+                  alt="Вегетарианское блюдо"
+                />
+              </div>
+              <div class="product-card__info">
+                <h3 class="product-card__title">Китайский яичный суп</h3>
+                <p class="product-card__desc">
+                  Традиционный китайский суп с яйцом и томатами черри
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">350 ₽</button>
+          </li>
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/new-dishes/paella.png"
+                alt=""
+              />
+              <div class="product-card__badges">
+                <img
+                  class="product-card__badge"
+                  src="./images/badges/vegetarian.svg"
+                  alt="Вегетарианское блюдо"
+                />
+              </div>
+              <div class="product-card__info">
+                <h3 class="product-card__title">Паэлья</h3>
+                <p class="product-card__desc">
+                  Традиционное испанское блюдо — рис, колбаски чоризо, куриное
+                  бедро, кальмар, кукуруза, горошек, специи
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">660 ₽</button>
+          </li>
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/new-dishes/beef-bourguignon.png"
+                alt=""
+              />
+              <div class="product-card__info">
+                <h3 class="product-card__title">Биф Бургеньон</h3>
+                <p class="product-card__desc">
+                  Блюдо французской кухни — тушёные кусочки говядины с
+                  картофелем и болгарским перцем
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">630 ₽</button>
+          </li>
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/new-dishes/smashed-cucumbers.png"
+                alt=""
+              />
+              <div class="product-card__badges">
+                <img
+                  class="product-card__badge"
+                  src="./images/badges/vegetarian.svg"
+                  alt="Вегетарианское блюдо"
+                />
+              </div>
+              <div class="product-card__info">
+                <h3 class="product-card__title">Битые огурцы</h3>
+                <p class="product-card__desc">
+                  Салат из свежих битых огурцов с уйгурским соусом, кешью и
+                  кунжутом
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">320 ₽</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section popular-dishes">
+        <h2 class="section__title">Популярное</h2>
+        <ul class="section__list">
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/popular-dishes/pepperoni.png"
+                alt=""
+              />
+              <div class="product-card__info">
+                <h3 class="product-card__title">Пепперони</h3>
+                <p class="product-card__desc">
+                  Просто и вкусно - томатная основа маринара, колбаски пепперони
+                  и сыр моцарелла
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">660 ₽</button>
+          </li>
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/popular-dishes/pear-gorgonzola.png"
+                alt=""
+              />
+              <div class="product-card__badges">
+                <img
+                  class="product-card__badge"
+                  src="./images/badges/vegetarian.svg"
+                  alt="Вегетарианское блюдо"
+                />
+              </div>
+              <div class="product-card__info">
+                <h3 class="product-card__title">Груша Горгонзола</h3>
+                <p class="product-card__desc">
+                  Нежная пицца на основе сливочного соуса с сыром горгондзола,
+                  грушей, медом и кедровыми орехами
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">780 ₽</button>
+          </li>
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/popular-dishes/pho-bo.png"
+                alt=""
+              />
+              <div class="product-card__info">
+                <h3 class="product-card__title">Фо Бо</h3>
+                <p class="product-card__desc">
+                  Вьетнамский суп с рисовой лапшой, в котором используется
+                  говядина, свежая зелень и ростки сои. Подают с добавками,
+                  такими как мята, долька лайма, острый соус шрирача, азиатский
+                  уксус и лаоганма
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">490 ₽</button>
+          </li>
+          <li class="product-card">
+            <a class="product-card__link" href="#">
+              <img
+                class="product-card__img"
+                src="./images/popular-dishes/tom-yum-w-seafood.png"
+                alt=""
+              />
+              <div class="product-card__badges">
+                <img
+                  class="product-card__badge"
+                  src="./images/badges/spicy.svg"
+                  alt="Острое блюдо"
+                />
+                <img
+                  class="product-card__badge"
+                  src="./images/badges/seafood.svg"
+                  alt="С морепродуктами"
+                />
+              </div>
+              <div class="product-card__info">
+                <h3 class="product-card__title">Том Ям с морепродуктами</h3>
+                <p class="product-card__desc">
+                  Традиционный тайский суп, на основе кокосового молока и
+                  сливок, с добавлением креветок, кальмаров, грибов шиитаке и
+                  шампиньонов, помидоров черри и свежей зелени. Подается с
+                  паровым тайским рисом
+                </p>
+              </div>
+            </a>
+            <button type="button" class="product-card__btn">590 ₽</button>
           </li>
         </ul>
       </section>
