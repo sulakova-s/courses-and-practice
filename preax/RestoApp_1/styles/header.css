@@ -1,5 +1,5 @@
 .header {
-  color: #555555;
+  color: var(--color-header-text);
 }
 
 /* Promo banner */
@@ -8,25 +8,43 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  padding: 12px 64px;
-  color: #ffffff;
-  background: #1c1c1c;
+  padding: 12px var(--page-padding);
+  color: var(--color-white);
+  background: var(--color-dark);
 }
 
 .header__promo-text {
-  font-size: 1.125rem;
+  font-size: var(--font-size-lg);
 }
 
-/* Buttons reset */
-.header__promo-close,
-.header__btn {
+/* Promo close button */
+.header__promo-close {
   padding: 0;
   background: none;
   border: none;
-  cursor: pointer;
 }
 
-.header__promo-icon {
+.header__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid var(--color-dark);
+  border-radius: var(--radius-lg);
+}
+
+.header__btn--profile {
+  background: transparent;
+}
+
+.header__btn--cart {
+  background: var(--color-dark);
+}
+
+.header__promo-icon,
+.header__btn-icon {
   display: block;
   width: 24px;
   height: 24px;
@@ -34,16 +52,20 @@
 
 /* Main part */
 .header__main {
-  background: linear-gradient(to right, #fedd2c, #f9c201);
+  background: linear-gradient(
+    to right,
+    var(--color-primary-500),
+    var(--color-primary-600)
+  );
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: 16px 64px;
+  padding: 16px var(--page-padding);
 }
 
 .header__logo {
@@ -70,22 +92,16 @@
 }
 
 .header__phone {
-  font-size: 1.125rem;
+  font-size: var(--font-size-lg);
 }
 
 .header__phone-caption {
-  font-size: 0.75rem;
-  font-weight: 400;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
   line-height: 1rem;
 }
 
 .header__buttons {
   display: flex;
   gap: 16px;
-}
-
-.header__btn-icon {
-  display: block;
-  width: 56px;
-  height: 48px;
 }

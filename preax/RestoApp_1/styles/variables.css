@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --color-dark: #1c1c1c;
+  --color-gray: #727272;
+  --color-header-text: #555555;
+  --color-bg-muted: #f4f4f4;
+  --color-white: #ffffff;
+  --color-primary-500: #fedd2c;
+  --color-primary-600: #f9c201;
+  --color-badge-vegetarian: #1daa0f;
+  --color-badge-spicy: #fc7d04;
+  --color-badge-seafood: #0094e4;
+
+  /* Font */
+  --font-family: "Inter", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-size-xs: 0.75rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2.5rem;
+
+  /* Layout */
+  --container-width: 1440px;
+  --page-padding: 64px;
+
+  /* Shapes */
+  --radius-lg: 16px;
+  --radius-sm: 8px;
+}
