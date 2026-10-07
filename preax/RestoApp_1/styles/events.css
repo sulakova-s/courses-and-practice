@@ -1,0 +1,11 @@
+.events__show-all {
+  width: 100%;
+  margin-top: 32px;
+  padding: 14px 24px;
+  font: inherit;
+  font-size: var(--font-size-lg);
+  color: var(--color-dark);
+  background: transparent;
+  border: 2px solid var(--color-dark);
+  border-radius: var(--radius-lg);
+}

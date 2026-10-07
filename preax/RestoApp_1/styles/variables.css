@@ -11,15 +11,19 @@
   --color-badge-spicy: #fc7d04;
   --color-badge-seafood: #0094e4;
 
+  --overlay: rgba(0, 0, 0, 0.6);
+
   /* Font */
   --font-family: "Inter", sans-serif;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
   --font-size-lg: 1.125rem;
   --font-size-2xl: 1.5rem;
-  --font-size-3xl: 2.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
 
   /* Layout */
   --container-width: 1440px;

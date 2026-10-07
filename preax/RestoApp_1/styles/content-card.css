@@ -1,0 +1,84 @@
+.content-card {
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 640px;
+  height: 360px;
+  padding: 32px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-lg);
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%);
+}
+
+.content-card--platina-status {
+  background-image: url("../images/promos/platina-status.png");
+}
+
+.content-card--registration-discount {
+  background-image: url("../images/promos/registration-discount.png");
+}
+
+.content-card--stand-up {
+  background-image: url("../images/events/stand-up.png");
+}
+
+.content-card--birthday {
+  background-image: url("../images/events/birthday.png");
+}
+
+.content-card--food-court {
+  background-image: url("../images/places/food-court.png");
+}
+
+.content-card--gastro-shop-pizza {
+  background-image: url("../images/places/gastro-shop-pizza.png");
+}
+
+.content-card__title {
+  position: relative;
+  font-size: var(--font-size-3xl);
+  line-height: 2.5rem;
+  color: var(--color-white);
+}
+
+.content-card__top {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  left: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-card__tags {
+  display: flex;
+  gap: 8px;
+}
+
+.content-card__tag,
+.content-card__status {
+  padding: 8px;
+  font-size: var(--font-size-sm);
+  line-height: 1.25rem;
+  color: var(--color-white);
+  background: var(--overlay);
+  border-radius: var(--radius-sm);
+}
+
+.content-card__status--soon,
+.content-card__status--open {
+  color: var(--color-dark);
+  background: var(--color-primary-500);
+}
+
+.content-card__status--done {
+  background: var(--color-gray);
+}
